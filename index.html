@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>FFW Agency Test</title>
+</head>
+<body>
+    <section class="tabs">
+        <header class="tabs_header">
+            <h3>Please select one font</h3>
+            <ul class="tabs__list">
+                <li>
+                    <button class="tab__link active" onclick="openTab(event,'myFonts')">My Fonts</button>
+                </li>
+                <li>
+                    <button class="tab__link" onclick="openTab(event,'buyFonts')">Buy Fonts</button>
+                </li>
+            </ul>
+        </header>
+        <div class="tabs__container" id="myFonts">
+            <div class="tabs__content">
+                <div class="tabs__column tabs--featured">
+                    <div class="box box--column-align">
+                        <input type="radio" id="merrywaether-font" class="box__input">
+                        <label for="merryweather-font" class="box__label box--description">Merriweather project is led by sorkin type</label>
+                        <div class="box__info box--green">
+                            <span class="box__letter">M</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__column tabs--default">
+                    <div class="box box--align-default">
+                        <input type="radio" id="roboto-font" class="box__input">
+                        <label for="roboto-font" class="box__label box__label--align">Roboto doesn't compromise, allowing letters</label>
+                        <div class="box__info box--pink">
+                            <span class="box__letter small--letter">R</span>
+                        </div>
+                    </div>
+                    <div class="box box--align-default">
+                        <input type="radio" id="nato-font" class="box__input">
+                        <label for="nato-font" class="box__label box__label--align">Noto Sans covers over 30 scripts</label>
+                        <div class="box__info box--blue">
+                            <span class="box__letter small--letter">NS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabs__container" id="buyFonts">
+            <div class="tabs__content tabs--center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque odio veniam neque pariatur, optio incidunt harum corrupti quibusdam architecto ab fuga in alias eius blanditiis a perspiciatis facilis! Fugiat, voluptates?
+            </div>
+        </div>
+    </section>
+
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
